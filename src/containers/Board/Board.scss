@@ -1,0 +1,9 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px black solid;
+  background-color: rgb(86, 80, 80);
+  border-radius: 5px;
+}
