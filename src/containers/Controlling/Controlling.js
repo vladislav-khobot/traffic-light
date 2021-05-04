@@ -1,12 +1,14 @@
-import './Controlling.scss';
-import { Button } from '../../components/Button';
-import { useDispatch, useSelector } from 'react-redux';
 import { useCallback } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import { actionColorChange } from '../../store/actionCreators/actionColorChange';
 import { actionStartAutoMode } from '../../store/actionCreators/actionStartAutoMode';
 import { actionStopAutoMode } from '../../store/actionCreators/actionStopAutoMode';
 import { actionChangeTimeout } from '../../store/actionCreators/actionChangeTimeout';
+import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
+
+import './Controlling.scss';
 
 function Controlling() {
   const dispatch = useDispatch();
@@ -19,7 +21,7 @@ function Controlling() {
 
   const onStartAutoMode = useCallback(() => {
     const autoModeID = setInterval(() => {
-      dispatch(actionColorChange());  
+      dispatch(actionColorChange());
     }, timeOut);
 
     dispatch(actionStartAutoMode(autoModeID));
