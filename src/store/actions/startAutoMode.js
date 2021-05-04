@@ -1,0 +1,3 @@
+const START_AUTO_MODE = 'START_AUTO_MODE';
+
+export { START_AUTO_MODE };

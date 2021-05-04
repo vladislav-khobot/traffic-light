@@ -1,0 +1,3 @@
+const STOP_AUTO_MODE = 'STOP_AUTO_MODE';
+
+export { STOP_AUTO_MODE };
