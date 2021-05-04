@@ -3,6 +3,7 @@ const initialState = {
   colorYellow: false,
   colorGreen: false,
   autoModeID: null,
+  timeOut: 1000,
 }
 
 export { initialState };

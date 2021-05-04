@@ -1,12 +1,12 @@
 import { COLOR_CHANGE } from "../actions/colorChange";
 import { START_AUTO_MODE } from "../actions/startAutoMode";
 import { STOP_AUTO_MODE } from "../actions/stopAutoMode";
+import { CHANGE_TIMEOUT } from '../actions/changeTimeout';
 import { initialState } from '../initialState';
 
 function colorReducer(state = initialState, action) {
   switch(action.type) {
     case COLOR_CHANGE:
-      
       const { colorRed, colorYellow, colorGreen } = getColorsCombination(state.colorRed, state.colorYellow, state.colorGreen);
       return {
         ...state,
@@ -27,12 +27,17 @@ function colorReducer(state = initialState, action) {
         autoModeID: null,
       }
 
+    case CHANGE_TIMEOUT:
+      return {
+        ...state,
+        timeOut: action.timeOut,
+      }
+
     default: return state;
   }
 }
 
 function getColorsCombination(colorRed, colorYellow, colorGreen) {
-
   const colorsCombination = {
     'false-false-false': { colorRed: true, colorYellow: false, colorGreen: false},
     'true-false-false': { colorRed: true, colorYellow: true, colorGreen: false},
@@ -42,7 +47,6 @@ function getColorsCombination(colorRed, colorYellow, colorGreen) {
   }  
 
   return colorsCombination[`${colorRed}-${colorYellow}-${colorGreen}`];
-
 }
 
 export { colorReducer };
