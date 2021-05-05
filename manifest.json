@@ -1,0 +1,10 @@
+{
+  "short_name": "Traffic light",
+  "name": "Traffic Light Sample, with Redux",
+  "icons": [
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

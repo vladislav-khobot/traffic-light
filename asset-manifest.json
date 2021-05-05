@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/traffic-light/static/css/main.0c7e0282.chunk.css",
+    "main.js": "/traffic-light/static/js/main.9418ab8f.chunk.js",
+    "main.js.map": "/traffic-light/static/js/main.9418ab8f.chunk.js.map",
+    "runtime-main.js": "/traffic-light/static/js/runtime-main.a9434543.js",
+    "runtime-main.js.map": "/traffic-light/static/js/runtime-main.a9434543.js.map",
+    "static/js/2.dc434282.chunk.js": "/traffic-light/static/js/2.dc434282.chunk.js",
+    "static/js/2.dc434282.chunk.js.map": "/traffic-light/static/js/2.dc434282.chunk.js.map",
+    "static/js/3.34a56ed0.chunk.js": "/traffic-light/static/js/3.34a56ed0.chunk.js",
+    "static/js/3.34a56ed0.chunk.js.map": "/traffic-light/static/js/3.34a56ed0.chunk.js.map",
+    "index.html": "/traffic-light/index.html",
+    "static/css/main.0c7e0282.chunk.css.map": "/traffic-light/static/css/main.0c7e0282.chunk.css.map",
+    "static/js/2.dc434282.chunk.js.LICENSE.txt": "/traffic-light/static/js/2.dc434282.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/traffic-light/static/media/background.e5c9e008.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9434543.js",
+    "static/js/2.dc434282.chunk.js",
+    "static/css/main.0c7e0282.chunk.css",
+    "static/js/main.9418ab8f.chunk.js"
+  ]
+}
