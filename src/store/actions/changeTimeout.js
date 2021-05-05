@@ -1,3 +1,0 @@
-const CHANGE_TIMEOUT = 'CHANGE_TIMEOUT';
-
-export { CHANGE_TIMEOUT };

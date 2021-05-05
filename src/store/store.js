@@ -1,5 +1,6 @@
 import { createStore } from 'redux';
-import { colorReducer } from './reducers/colorReducer';
+
+import { colorReducer } from './colors/reducer';
 
 const store = createStore(colorReducer);
 

@@ -1,10 +1,13 @@
-import './assets/styles/App.scss';
+import { Provider } from 'react-redux';
+
 import { Board } from './containers/Board';
 import { Controlling } from './containers/Controlling';
-import { Provider } from 'react-redux';
 import { store } from './store/store';
 
+import './assets/styles/App.scss';
+
 function App() {
+  
   return (
     <Provider store={store}>
       <div className="app">

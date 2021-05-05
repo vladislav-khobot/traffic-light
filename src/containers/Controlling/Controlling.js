@@ -1,17 +1,20 @@
-import './Controlling.scss';
-import { Button } from '../../components/Button';
-import { useDispatch, useSelector } from 'react-redux';
 import { useCallback } from 'react';
-import { actionColorChange } from '../../store/actionCreators/actionColorChange';
-import { actionStartAutoMode } from '../../store/actionCreators/actionStartAutoMode';
-import { actionStopAutoMode } from '../../store/actionCreators/actionStopAutoMode';
-import { actionChangeTimeout } from '../../store/actionCreators/actionChangeTimeout';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { actionColorChange } from '../../store/colors/actions';
+import { actionStartAutoMode } from '../../store/colors/actions';
+import { actionStopAutoMode } from '../../store/colors/actions';
+import { actionChangeTimeout } from '../../store/colors/actions';
+import { selectAutoModeID, selectTimeOut } from '../../store/colors/selectors';
 import { Input } from '../../components/Input';
+import { Button } from '../../components/Button';
+
+import './Controlling.scss';
 
 function Controlling() {
   const dispatch = useDispatch();
-  const autoModeID = useSelector(state => state.autoModeID);
-  const timeOut = useSelector(state => state.timeOut);
+  const autoModeID = useSelector(selectAutoModeID);
+  const timeOut = useSelector(selectTimeOut);
 
   const onNextStep = useCallback(() => {
     dispatch(actionColorChange());
